@@ -5,7 +5,7 @@ A modern Astro template with Sentry branding and Tailwind CSS v4, designed for u
 ## Features
 
 - **Astro v5** with modern web development
-- **Tailwind CSS v4** for styling with PostCSS
+- **Tailwind CSS v4** for styling with Vite plugin
 - **Sentry brand colors** with purple and pink accent theming
 - **TypeScript** for type safety
 - **Dark mode** support with CSS custom properties
@@ -52,7 +52,6 @@ The template uses Sentry's brand colors:
 │       └── global.css
 ├── astro.config.mjs
 ├── package.json
-├── postcss.config.mjs
 └── tsconfig.json
 ```
 
