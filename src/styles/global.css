@@ -29,45 +29,25 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.99 0.005 285);
-  --foreground: oklch(0.25 0.04 285);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.25 0.04 285);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0.04 285);
-  --primary: oklch(0.52 0.15 285);
-  --primary-foreground: oklch(0.99 0.005 285);
-  --secondary: oklch(0.95 0.01 285);
-  --secondary-foreground: oklch(0.25 0.04 285);
-  --muted: oklch(0.96 0.008 285);
-  --muted-foreground: oklch(0.5 0.03 285);
-  --accent: oklch(0.65 0.18 340);
-  --accent-foreground: oklch(0.99 0.005 285);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.01 285);
-  --input: oklch(0.92 0.01 285);
-  --ring: oklch(0.52 0.15 285);
-}
-
-.dark {
-  --background: oklch(0.15 0.03 285);
-  --foreground: oklch(0.98 0.005 285);
-  --card: oklch(0.2 0.035 285);
-  --card-foreground: oklch(0.98 0.005 285);
-  --popover: oklch(0.2 0.035 285);
-  --popover-foreground: oklch(0.98 0.005 285);
-  --primary: oklch(0.58 0.17 285);
-  --primary-foreground: oklch(0.15 0.03 285);
-  --secondary: oklch(0.25 0.04 285);
-  --secondary-foreground: oklch(0.98 0.005 285);
-  --muted: oklch(0.25 0.04 285);
-  --muted-foreground: oklch(0.65 0.02 285);
-  --accent: oklch(0.68 0.2 340);
-  --accent-foreground: oklch(0.15 0.03 285);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(0.3 0.045 285);
-  --input: oklch(0.3 0.045 285);
-  --ring: oklch(0.58 0.17 285);
+  /* Sentry Dark Mode Colors */
+  --background: 11.125 13.333 23.922; /* Rich Black #181225 */
+  --foreground: 255 255 255;
+  --card: 24 18 37; /* Rich Black */
+  --card-foreground: 255 255 255;
+  --popover: 24 18 37;
+  --popover-foreground: 255 255 255;
+  --primary: 117 83 255; /* Blurple #7553FF */
+  --primary-foreground: 255 255 255;
+  --secondary: 78 42 154; /* Dk Blurple #4E2A9A */
+  --secondary-foreground: 255 255 255;
+  --muted: 54 22 107; /* Dk Violet #36166B */
+  --muted-foreground: 158 134 255; /* Lt Blurple #9E86FF */
+  --accent: 167 55 180; /* Dk Purple #A737B4 */
+  --accent-foreground: 255 255 255;
+  --destructive: 255 69 168; /* Dk Pink #FF45A8 */
+  --border: 78 42 154; /* Dk Blurple */
+  --input: 78 42 154;
+  --ring: 117 83 255; /* Blurple */
 }
 
 @layer base {
