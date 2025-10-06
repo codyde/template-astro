@@ -52,6 +52,59 @@ import '../styles/global.css';
 						Read Astro docs
 					</a>
 				</div>
+
+				<!-- Sentry Integration Section -->
+				<div class="mt-16 w-full max-w-3xl">
+					<div class="border-2 rounded-lg bg-card p-6">
+						<div class="flex items-center gap-2 mb-3">
+							<svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+							</svg>
+							<h2 class="text-xl font-semibold">Sentry Integration Ready</h2>
+						</div>
+						<p class="text-sm text-muted-foreground mb-6">
+							Add Sentry monitoring in seconds with this simple setup
+						</p>
+
+						<div class="space-y-6">
+							<div>
+								<p class="text-sm text-muted-foreground mb-2">1. Install Sentry SDK:</p>
+								<pre class="bg-muted p-4 rounded-lg overflow-x-auto"><code class="text-sm font-mono">npx astro add @sentry/astro
+npm install @sentry/profiling-node</code></pre>
+							</div>
+
+							<div>
+								<p class="text-sm text-muted-foreground mb-2">2. Configure your DSN in sentry.client.config.js:</p>
+								<pre class="bg-muted p-4 rounded-lg overflow-x-auto"><code class="text-sm font-mono">import * as Sentry from "@sentry/astro";
+
+Sentry.init({
+  dsn: "YOUR_SENTRY_DSN",
+  integrations: [
+    Sentry.browserTracingIntegration(),
+    Sentry.replayIntegration(),
+  ],
+  tracesSampleRate: 1.0,
+  replaysSessionSampleRate: 0.1,
+  replaysOnErrorSampleRate: 1.0,
+});</code></pre>
+							</div>
+
+							<div class="flex items-center gap-2 pt-2">
+								<a
+									href="https://docs.sentry.io/platforms/javascript/guides/astro/"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="text-sm text-primary hover:underline flex items-center gap-1"
+								>
+									View full documentation
+									<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</main>
 			<footer class="row-start-3 flex gap-6 flex-wrap items-center justify-center text-sm text-muted-foreground">
 				<a
