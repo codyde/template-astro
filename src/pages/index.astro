@@ -23,11 +23,7 @@ import '../styles/global.css';
 
 				<ol class="font-mono list-inside list-decimal text-sm leading-6 text-center sm:text-left">
 					<li class="mb-2 tracking-tight">
-						Get started by editing{" "}
-						<code class="bg-black/5 dark:bg-white/10 font-mono font-semibold px-1 py-0.5 rounded">
-							src/pages/index.astro
-						</code>
-						.
+						Get started by editing <code class="bg-black/5 dark:bg-white/10 font-mono font-semibold px-1 py-0.5 rounded">src/pages/index.astro</code>.
 					</li>
 					<li class="tracking-tight">
 						Save and see your changes instantly.
@@ -75,18 +71,18 @@ npm install @sentry/profiling-node</code></pre>
 
 							<div>
 								<p class="text-sm text-muted-foreground mb-2">2. Configure your DSN in sentry.client.config.js:</p>
-								<pre class="bg-muted p-4 rounded-lg overflow-x-auto"><code class="text-sm font-mono">import * as Sentry from "@sentry/astro";
+								<pre class="bg-muted p-4 rounded-lg overflow-x-auto"><code class="text-sm font-mono">import * as Sentry from &quot;@sentry/astro&quot;;
 
-Sentry.init({
-  dsn: "YOUR_SENTRY_DSN",
-  integrations: [
+Sentry.init(&lbrace;
+  dsn: &quot;YOUR_SENTRY_DSN&quot;,
+  integrations: &lbrack;
     Sentry.browserTracingIntegration(),
     Sentry.replayIntegration(),
-  ],
+  &rbrack;,
   tracesSampleRate: 1.0,
   replaysSessionSampleRate: 0.1,
   replaysOnErrorSampleRate: 1.0,
-});</code></pre>
+&rbrace;);</code></pre>
 							</div>
 
 							<div class="flex items-center gap-2 pt-2">
